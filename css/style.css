@@ -98,7 +98,7 @@ nav {
       font-size: 2rem;
       color: #FFF;
       display: block;
-      transition: 0.3s; }
+      transition: color .5s ease-out; }
       nav .overlay a:hover, nav .overlay a:focus {
         color: #B17D69; }
   nav .overlay-content {
@@ -108,7 +108,8 @@ nav {
     text-align: center;
     margin-top: 30px; }
     nav .overlay-content .social-nav i {
-      color: #FFF; }
+      color: #FFF;
+      transition: color .5s ease-out; }
       nav .overlay-content .social-nav i:hover, nav .overlay-content .social-nav i:focus {
         color: #B17D69; }
 

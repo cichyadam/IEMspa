@@ -147,7 +147,7 @@ nav{
             font-size: 2rem;
             color: $white;
             display: block;
-            transition: 0.3s;
+            transition: color .5s ease-out;
     
             &:hover,
             &:focus {
@@ -166,6 +166,7 @@ nav{
     .social-nav{
         i{
             color: $white;
+            transition: color .5s ease-out;
             &:hover,
             &:focus {
                 color: $gold;
