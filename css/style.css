@@ -180,10 +180,6 @@ nav {
     font-size: .8rem; }
 
 /* yoga */
-.yoga .yoga-cover {
-  width: 105%;
-  margin-top: -65px; }
-
 .yoga .yoga-desc h3 {
   font-size: 3rem; }
 
@@ -200,11 +196,6 @@ nav {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-size: auto; }
-  .cryotherapy .cryo-cover {
-    z-index: -100;
-    width: 115%;
-    margin-top: -200px;
-    padding-right: 40px; }
   .cryotherapy .cryo-desc h3 {
     font-size: 3rem; }
   .cryotherapy .cryo-desc .light-text {
@@ -215,11 +206,6 @@ nav {
     column-gap: 40px; }
 
 /* oxyslovakia */
-.oxyslovakia .oxy-cover {
-  width: 115%;
-  margin-top: -100px;
-  padding-right: 40px; }
-
 .oxyslovakia .oxy-desc h3 {
   font-size: 3rem; }
 
@@ -234,9 +220,6 @@ nav {
   background-image: url(../img/bg.png);
   background-repeat: no-repeat;
   background-size: auto; }
-  .barber .barber-cover {
-    width: 115%;
-    margin-top: -100px; }
   .barber .barber-desc h3 {
     font-size: 3rem; }
   .barber .barber-desc .light-text {
@@ -247,11 +230,6 @@ nav {
 /* manicure */
 .manicure {
   overflow: hidden; }
-  .manicure .manicure-cover {
-    width: 115%;
-    margin-top: -200px;
-    padding-right: 40px;
-    filter: url(../img/filter.svg); }
   .manicure .mani-desc h3 {
     font-size: 3rem; }
   .manicure .mani-desc .light-text {
@@ -310,3 +288,45 @@ nav {
   transition: color .5s ease-out; }
   #footer .social-media-footer i:hover {
     color: #B17D69; }
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .yoga-cover {
+    width: 105%;
+    margin-top: -65px; }
+  .cryo-cover {
+    z-index: -100;
+    width: 115%;
+    margin-top: -200px;
+    padding-right: 40px; }
+  .oxy-cover {
+    width: 115%;
+    margin-top: -100px;
+    padding-right: 40px; }
+  .barber-cover {
+    width: 115%;
+    margin-top: -100px; }
+  .manicure-cover {
+    width: 115%;
+    margin-top: -200px;
+    padding-right: 40px; } }
+
+@media (min-width: 1200px) {
+  .yoga-cover {
+    width: 105%;
+    margin-top: -65px; }
+  .cryo-cover {
+    z-index: -100;
+    width: 115%;
+    margin-top: -200px;
+    padding-right: 40px; }
+  .oxy-cover {
+    width: 115%;
+    margin-top: -100px;
+    padding-right: 40px; }
+  .barber-cover {
+    width: 115%;
+    margin-top: -100px; }
+  .manicure-cover {
+    width: 115%;
+    margin-top: -200px;
+    padding-right: 40px; } }

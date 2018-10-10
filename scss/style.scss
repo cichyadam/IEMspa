@@ -248,10 +248,7 @@ nav{
 
 /* yoga */
 .yoga {
-    .yoga-cover {
-        width: 105%;
-        margin-top: -65px;
-    }
+    
 
     .yoga-desc {
         h3 {
@@ -275,12 +272,7 @@ nav{
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: auto;
-    .cryo-cover{
-        z-index: -100;
-        width: 115%;
-        margin-top: -200px;
-        padding-right: 40px;
-    }
+
     .cryo-desc {
         h3 {
             font-size: 3rem;
@@ -301,11 +293,7 @@ nav{
 
 /* oxyslovakia */
 .oxyslovakia {
-    .oxy-cover {
-        width: 115%;
-        margin-top: -100px;
-        padding-right: 40px;
-    }
+
 
     .oxy-desc {
         h3 {
@@ -330,10 +318,7 @@ nav{
     background-repeat: no-repeat;
     background-size: auto;
     
-    .barber-cover {
-        width: 115%;
-        margin-top: -100px;
-    }
+
 
     .barber-desc {
         h3 {
@@ -355,12 +340,7 @@ nav{
 /* manicure */
 .manicure {
     overflow: hidden;
-    .manicure-cover {
-        width: 115%;
-        margin-top: -200px;
-        padding-right: 40px;
-        filter: url(../img/filter.svg);
-    }
+
 
     .mani-desc {
         h3 {
@@ -446,3 +426,63 @@ nav{
     }
 }
 }
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {  }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {  }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {  }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {    .yoga-cover {
+        width: 105%;
+        margin-top: -65px;
+    }
+   .cryo-cover{
+        z-index: -100;
+        width: 115%;
+        margin-top: -200px;
+        padding-right: 40px;
+    }
+  .oxy-cover {
+        width: 115%;
+        margin-top: -100px;
+        padding-right: 40px;
+    }
+  .barber-cover {
+        width: 115%;
+        margin-top: -100px;
+    }
+ .manicure-cover {
+        width: 115%;
+        margin-top: -200px;
+        padding-right: 40px;
+    } }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {    .yoga-cover {
+        width: 105%;
+        margin-top: -65px;
+    }
+   .cryo-cover{
+        z-index: -100;
+        width: 115%;
+        margin-top: -200px;
+        padding-right: 40px;
+    }
+  .oxy-cover {
+        width: 115%;
+        margin-top: -100px;
+        padding-right: 40px;
+    }
+  .barber-cover {
+        width: 115%;
+        margin-top: -100px;
+    }
+ .manicure-cover {
+        width: 115%;
+        margin-top: -200px;
+        padding-right: 40px;
+    } }
