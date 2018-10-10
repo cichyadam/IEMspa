@@ -1,0 +1,262 @@
+/* font */
+@font-face {
+  font-family: 'TiemposHeadline';
+  src: url(../font/TiemposHeadline-Light.otf); }
+
+@font-face {
+  font-family: 'Metric';
+  src: url(../font/Metric-Medium.otf); }
+
+.metric {
+  font-family: 'Metric'; }
+
+/* body */
+body {
+  font-family: 'TiemposHeadline';
+  overflow-x: hidden; }
+
+/* helpers */
+.gold {
+  color: #B17D69; }
+
+.light {
+  color: #b9aea9; }
+
+.card {
+  min-height: 300px;
+  filter: drop-shadow(5px 5px 5px #acacac);
+  border: none;
+  border-radius: 0; }
+  .card p {
+    font-size: .9rem; }
+
+/* hero page */
+.hero-page .side-bar h4 {
+  font-family: Arial, sans-serif;
+  font-size: .7rem;
+  color: #A79A94;
+  letter-spacing: 8px;
+  transform: rotate(180deg);
+  text-orientation: sideways;
+  writing-mode: vertical-rl; }
+  .hero-page .side-bar h4::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background-color: #A79A94;
+    left: 0px;
+    top: -20px;
+    transform: rotate(90deg); }
+
+.hero-page .side-bar .social-icons {
+  display: grid; }
+  .hero-page .side-bar .social-icons i {
+    transition: color .5s ease-out; }
+    .hero-page .side-bar .social-icons i:hover {
+      color: #d7bdb3; }
+
+.hero-page .hero-heading h2 {
+  font-size: 3rem; }
+
+.hero-page .hero-heading button {
+  background-color: #A79A94;
+  color: #FFF;
+  padding: 10px 50px; }
+  .hero-page .hero-heading button img {
+    width: 13px;
+    height: 10px; }
+
+/* navbar */
+nav {
+  height: 80px; }
+  nav .logo img {
+    width: 60%; }
+  nav .burger-menu {
+    z-index: 12; }
+    nav .burger-menu .hamburger-inner {
+      background-color: #B17D69; }
+      nav .burger-menu .hamburger-inner::before, nav .burger-menu .hamburger-inner::after {
+        background-color: #B17D69; }
+    nav .burger-menu .hamburger.is-active .hamburger-inner {
+      background-color: #B17D69; }
+      nav .burger-menu .hamburger.is-active .hamburger-inner::before, nav .burger-menu .hamburger.is-active .hamburger-inner::after {
+        background-color: #B17D69; }
+  nav .overlay {
+    height: 0%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(167, 154, 148, 0.98);
+    overflow-y: hidden;
+    transition: 0.5s; }
+    nav .overlay a {
+      padding: 8px;
+      text-decoration: none;
+      font-size: 2rem;
+      color: #FFF;
+      display: block;
+      transition: 0.3s; }
+      nav .overlay a:hover, nav .overlay a:focus {
+        color: #B17D69; }
+  nav .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px; }
+    nav .overlay-content .social-nav i {
+      color: #FFF; }
+      nav .overlay-content .social-nav i:hover, nav .overlay-content .social-nav i:focus {
+        color: #B17D69; }
+
+/* dermocosmetics */
+.dermocosmetics h4 {
+  font-size: 2.3rem; }
+
+.dermocosmetics .card-text {
+  font-size: .8rem; }
+
+/* figure */
+.form-figure h4 {
+  font-size: 2.3rem; }
+
+.form-figure .card-text {
+  font-size: .8rem; }
+
+/* yoga */
+.yoga img {
+  width: 105%;
+  margin-top: -65px; }
+
+.yoga .yoga-desc h3 {
+  font-size: 3rem; }
+
+.yoga .yoga-desc .light-text {
+  font-size: .9rem; }
+
+.yoga .yoga-desc .desc {
+  column-count: 2;
+  font-size: .75rem;
+  column-gap: 40px; }
+
+/* cryotherapy */
+.cryotherapy .cryo-desc h3 {
+  font-size: 3rem; }
+
+.cryotherapy .cryo-desc .light-text {
+  font-size: .9rem; }
+
+.cryotherapy .cryo-desc .desc {
+  font-size: .75rem;
+  column-count: 2;
+  column-gap: 40px; }
+
+/* oxyslovakia */
+.oxyslovakia img {
+  width: 115%;
+  margin-top: -100px;
+  padding-right: 40px; }
+
+.oxyslovakia .oxy-desc h3 {
+  font-size: 3rem; }
+
+.oxyslovakia .oxy-desc button {
+  background-color: #A79A94;
+  color: #FFF;
+  padding: 10px 50px; }
+  .oxyslovakia .oxy-desc button img {
+    width: 13px;
+    height: 10px; }
+
+.oxyslovakia .oxy-desc .light-text {
+  font-size: 1rem; }
+
+.oxyslovakia .oxy-desc .metric {
+  font-size: .7rem; }
+
+/* barber */
+.barber img {
+  width: 115%;
+  margin-top: -100px; }
+
+.barber .barber-desc h3 {
+  font-size: 3rem; }
+
+.barber .barber-desc .light-text {
+  font-size: 1rem; }
+
+.barber .barber-desc .desc {
+  font-size: .8rem; }
+
+/* manicure */
+.manicure img {
+  width: 115%;
+  margin-top: -200px;
+  padding-right: 40px; }
+
+.manicure .mani-desc h3 {
+  font-size: 3rem; }
+
+.manicure .mani-desc button {
+  background-color: #A79A94;
+  color: #FFF;
+  padding: 10px 50px; }
+  .manicure .mani-desc button img {
+    width: 13px;
+    height: 10px; }
+
+.manicure .mani-desc .light-text {
+  font-size: 1rem; }
+
+.manicure .mani-desc .metric {
+  font-size: .75rem;
+  padding: 0 100px; }
+
+/* news */
+.news h4 {
+  font-size: 2.3rem; }
+
+.news .card-text {
+  font-size: .8rem; }
+
+/* newsletter */
+.newsletter input {
+  background-color: #e3e1dc;
+  box-shadow: none;
+  font-size: 1rem;
+  line-height: 1.43;
+  min-height: 3.5em;
+  padding: 1em .5em; }
+
+.newsletter button {
+  background-color: #A79A94;
+  color: #FFF;
+  border-radius: 0;
+  letter-spacing: 1px;
+  margin: .4rem .8rem;
+  transition: all 0.3s ease-in-out;
+  padding: .7rem 3rem;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  word-break: break-word; }
+
+/* footer */
+#footer .footer {
+  background-color: #e3e1dc; }
+  #footer .footer p {
+    font-size: .85rem;
+    line-height: 25px; }
+
+#footer .copyright {
+  color: #b9aea9; }
+
+#footer .social-media-footer i {
+  color: #d7bdb3;
+  transition: color .5s ease-out; }
+  #footer .social-media-footer i:hover {
+    color: #B17D69; }

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="arrow_right_copy" data-name="arrow right copy" class="cls-1" d="M1501.655,680.625h10.131l-3.44,3.308a.608.608,0,0,0,0,.884.668.668,0,0,0,.919,0l4.55-4.375a.608.608,0,0,0,0-.884l-4.55-4.375a.668.668,0,0,0-.919,0,.608.608,0,0,0,0,.884l3.44,3.308h-10.131a.625.625,0,1,0,0,1.25Z" transform="translate(-1501.005 -675)"/>
+</svg>

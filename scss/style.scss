@@ -1,0 +1,400 @@
+$gold : #B17D69;
+$light-brown: #A79A94;
+$black: #000;
+$white: #FFF;
+$light: #e3e1dc;
+$arial: Arial,sans-serif;
+$backgroundcolor: #e7e4e3;
+$footer: #b9aea9;
+$footer-icons: #d7bdb3;
+
+/* font */
+@font-face {
+    font-family: 'TiemposHeadline';
+    src: url(../font/TiemposHeadline-Light.otf);
+}
+
+@font-face {
+    font-family: 'Metric';
+    src: url(../font/Metric-Medium.otf);
+}
+
+.metric {
+    font-family: 'Metric';
+}
+
+/* body */
+body {
+    font-family: 'TiemposHeadline';
+    overflow-x: hidden;
+}
+
+/* helpers */
+.gold {
+    color: $gold;
+}
+
+.light {
+    color: #b9aea9;
+}
+
+.card {
+    min-height: 300px;
+    filter: drop-shadow(5px 5px 5px #acacac);
+    border: none;
+    border-radius: 0;
+
+    p {
+        font-size: .9rem;
+    }
+
+}
+
+/* hero page */
+.hero-page {
+    .side-bar {
+        h4 {
+            font-family: $arial;
+            font-size: .7rem;
+            color: $light-brown;
+            letter-spacing: 8px;
+            transform: rotate(180deg);
+            text-orientation: sideways;
+            writing-mode: vertical-rl;
+
+            &::before {
+                content: '';
+                position: absolute;
+                width: 60px;
+                height: 1px;
+                background-color: $light-brown;
+                left: 0px;
+                top: -20px;
+                transform: rotate(90deg);
+            }
+        }
+
+        .social-icons {
+            display: grid;
+
+            i {
+                transition: color .5s ease-out;
+
+                &:hover {
+                    color: $footer-icons;
+                }
+            }
+        }
+    }
+
+    .hero-heading {
+        h2 {
+            font-size: 3rem;
+        }
+
+        button {
+            background-color: $light-brown;
+            color: $white;
+            padding: 10px 50px;
+
+            img {
+                width: 13px;
+                height: 10px;
+            }
+        }
+    }
+}
+/* navbar */
+nav{
+    height: 80px;
+    .logo{
+        img{
+            width: 60%
+        }
+    }
+    .burger-menu {
+        z-index: 12;
+       .hamburger-inner{
+           background-color: $gold;
+           &::before,&::after{
+            background-color: $gold;
+           }
+       }
+       .hamburger.is-active{
+        .hamburger-inner{
+            background-color: $gold;
+            &::before,&::after{
+             background-color: $gold;
+            }
+        }
+       } 
+    }
+    
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(167, 154, 148, 0.98);
+        overflow-y: hidden;
+        transition: 0.5s;
+    
+        a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 2rem;
+            color: $white;
+            display: block;
+            transition: 0.3s;
+    
+            &:hover,
+            &:focus {
+                color: $gold;
+            }
+        }
+    
+    }
+    
+    .overlay-content {
+        position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    .social-nav{
+        i{
+            color: $white;
+            &:hover,
+            &:focus {
+                color: $gold;
+            }
+        }
+    }
+    }
+}
+
+/* dermocosmetics */
+.dermocosmetics {
+    h4 {
+        font-size: 2.3rem;
+    }
+
+    .card-text {
+        font-size: .8rem;
+    }
+}
+
+/* figure */
+.form-figure {
+    h4 {
+        font-size: 2.3rem;
+    }
+
+    .card-text {
+        font-size: .8rem;
+    }
+}
+
+/* yoga */
+.yoga {
+    img {
+        width: 105%;
+        margin-top: -65px;
+    }
+
+    .yoga-desc {
+        h3 {
+            font-size: 3rem;
+        }
+
+        .light-text {
+            font-size: .9rem;
+        }
+
+        .desc {
+            column-count: 2;
+            font-size: .75rem;
+            column-gap: 40px;
+        }
+    }
+}
+
+/* cryotherapy */
+.cryotherapy {
+    .cryo-desc {
+        h3 {
+            font-size: 3rem;
+        }
+
+        .light-text {
+            font-size: .9rem;
+        }
+
+        .desc {
+            font-size: .75rem;
+            column-count: 2;
+            column-gap: 40px;
+        }
+
+    }
+}
+
+/* oxyslovakia */
+.oxyslovakia {
+    img {
+        width: 115%;
+        margin-top: -100px;
+        padding-right: 40px;
+    }
+
+    .oxy-desc {
+        h3 {
+            font-size: 3rem;
+        }
+
+        button {
+            background-color: $light-brown;
+            color: $white;
+            padding: 10px 50px;
+
+            img {
+                width: 13px;
+                height: 10px;
+            }
+        }
+
+        .light-text {
+            font-size: 1rem;
+        }
+
+        .metric {
+            font-size: .7rem;
+        }
+
+    }
+}
+
+/* barber */
+.barber {
+
+    // background-color: $backgroundcolor;
+    img {
+        width: 115%;
+        margin-top: -100px;
+    }
+
+    .barber-desc {
+        h3 {
+            font-size: 3rem;
+        }
+
+        .light-text {
+            font-size: 1rem;
+        }
+
+        .desc {
+            font-size: .8rem;
+
+        }
+
+    }
+}
+
+/* manicure */
+.manicure {
+    img {
+        width: 115%;
+        margin-top: -200px;
+        padding-right: 40px;
+    }
+
+    .mani-desc {
+        h3 {
+            font-size: 3rem;
+        }
+
+        button {
+            background-color: $light-brown;
+            color: $white;
+            padding: 10px 50px;
+
+            img {
+                width: 13px;
+                height: 10px;
+            }
+        }
+
+        .light-text {
+            font-size: 1rem;
+        }
+
+        .metric {
+            font-size: .75rem;
+            padding: 0 100px;
+        }
+
+    }
+}
+/* news */
+.news {
+    h4 {
+        font-size: 2.3rem;
+    }
+
+    .card-text {
+        font-size: .8rem;
+    }
+}
+/* newsletter */
+.newsletter {
+    input {
+        background-color: $light;
+        box-shadow: none;
+        font-size: 1rem;
+        line-height: 1.43;
+        min-height: 3.5em;
+        padding: 1em .5em;
+    }
+
+    button {
+        background-color: $light-brown;
+        color: $white;
+        border-radius: 0;
+        letter-spacing: 1px;
+        margin: .4rem .8rem;
+        transition: all 0.3s ease-in-out;
+        padding: .7rem 3rem;
+        border-radius: 3px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        word-break: break-word;
+
+    }
+} 
+/* footer */
+#footer{
+.footer{
+    background-color: $light;
+    p{
+        font-size: .85rem;
+        line-height: 25px;
+    }
+    
+}
+.copyright{
+    color: $footer;
+}
+.social-media-footer{   
+    i {
+        color: $footer-icons;
+        transition: color .5s ease-out;
+
+        &:hover {
+            color: $gold;
+        }
+    }
+}
+}
