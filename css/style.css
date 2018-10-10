@@ -7,6 +7,42 @@
   font-family: 'Metric';
   src: url(../font/Metric-Medium.otf); }
 
+@font-face {
+  font-family: 'MetricLight';
+  src: url(../font/Metric-Light.otf); }
+
+/* button */
+.yoga button,
+.oxyslovakia button,
+.cryotherapy button,
+.barber button,
+.manicure button,
+.news button {
+  font-family: 'MetricLight';
+  letter-spacing: 4px;
+  background-color: #A79A94;
+  color: #FFF;
+  padding: 5px 10px;
+  border-radius: 0; }
+  .yoga button p,
+  .oxyslovakia button p,
+  .cryotherapy button p,
+  .barber button p,
+  .manicure button p,
+  .news button p {
+    margin: 0;
+    font-size: .8rem; }
+  .yoga button img,
+  .oxyslovakia button img,
+  .cryotherapy button img,
+  .barber button img,
+  .manicure button img,
+  .news button img {
+    z-index: 1000;
+    margin-left: 20px;
+    width: 13px;
+    height: 10px; }
+
 .metric {
   font-family: 'Metric'; }
 
@@ -60,10 +96,16 @@ body {
   font-size: 3rem; }
 
 .hero-page .hero-heading button {
+  font-family: 'MetricLight';
+  letter-spacing: 4px;
   background-color: #A79A94;
   color: #FFF;
-  padding: 10px 50px; }
+  padding: 5px 30px;
+  border-radius: 0; }
+  .hero-page .hero-heading button p {
+    margin: 0; }
   .hero-page .hero-heading button img {
+    margin-left: 50px;
     width: 13px;
     height: 10px; }
 
@@ -117,6 +159,9 @@ nav {
 .dermocosmetics h4 {
   font-size: 2.3rem; }
 
+.dermocosmetics .about {
+  font-size: .9rem; }
+
 .dermocosmetics .card-text {
   font-size: .8rem; }
 
@@ -124,11 +169,14 @@ nav {
 .form-figure h4 {
   font-size: 2.3rem; }
 
+.form-figure .about {
+  font-size: .9rem; }
+
 .form-figure .card-text {
   font-size: .8rem; }
 
 /* yoga */
-.yoga img {
+.yoga .yoga-cover {
   width: 105%;
   margin-top: -65px; }
 
@@ -156,21 +204,13 @@ nav {
   column-gap: 40px; }
 
 /* oxyslovakia */
-.oxyslovakia img {
+.oxyslovakia .oxy-cover {
   width: 115%;
   margin-top: -100px;
   padding-right: 40px; }
 
 .oxyslovakia .oxy-desc h3 {
   font-size: 3rem; }
-
-.oxyslovakia .oxy-desc button {
-  background-color: #A79A94;
-  color: #FFF;
-  padding: 10px 50px; }
-  .oxyslovakia .oxy-desc button img {
-    width: 13px;
-    height: 10px; }
 
 .oxyslovakia .oxy-desc .light-text {
   font-size: 1rem; }
@@ -179,7 +219,7 @@ nav {
   font-size: .7rem; }
 
 /* barber */
-.barber img {
+.barber .barber-cover {
   width: 115%;
   margin-top: -100px; }
 
@@ -193,21 +233,13 @@ nav {
   font-size: .8rem; }
 
 /* manicure */
-.manicure img {
+.manicure .manicure-cover {
   width: 115%;
   margin-top: -200px;
   padding-right: 40px; }
 
 .manicure .mani-desc h3 {
   font-size: 3rem; }
-
-.manicure .mani-desc button {
-  background-color: #A79A94;
-  color: #FFF;
-  padding: 10px 50px; }
-  .manicure .mani-desc button img {
-    width: 13px;
-    height: 10px; }
 
 .manicure .mani-desc .light-text {
   font-size: 1rem; }

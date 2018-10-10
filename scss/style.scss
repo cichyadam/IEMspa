@@ -18,7 +18,38 @@ $footer-icons: #d7bdb3;
     font-family: 'Metric';
     src: url(../font/Metric-Medium.otf);
 }
+@font-face {
+    font-family: 'MetricLight';
+    src: url(../font/Metric-Light.otf);
+}
+/* button */
+.yoga,
+.oxyslovakia,
+.cryotherapy,
+.barber,
+.manicure,
+.news{
+    button {
+        font-family: 'MetricLight';
+        letter-spacing: 4px;
+        background-color: $light-brown;
+        color: $white;
+        padding: 5px 10px;
+        border-radius: 0;
+        p{
+            margin: 0;
+            font-size: .8rem;
+        }
 
+        img {
+            z-index: 1000;
+            margin-left: 20px;
+            width: 13px;
+            height: 10px;
+        }
+    }
+
+}
 .metric {
     font-family: 'Metric';
 }
@@ -92,16 +123,23 @@ body {
             font-size: 3rem;
         }
 
-        button {
-            background-color: $light-brown;
-            color: $white;
-            padding: 10px 50px;
+            button {
+                font-family: 'MetricLight';
+                letter-spacing: 4px;
+                background-color: $light-brown;
+                color: $white;
+                padding: 5px 30px;
+                border-radius: 0;
+                p{
+                    margin: 0;
+                }
 
-            img {
-                width: 13px;
-                height: 10px;
+                img {
+                    margin-left: 50px;
+                    width: 13px;
+                    height: 10px;
+                }
             }
-        }
     }
 }
 /* navbar */
@@ -181,6 +219,9 @@ nav{
     h4 {
         font-size: 2.3rem;
     }
+        .about{
+            font-size: .9rem;
+        }
 
     .card-text {
         font-size: .8rem;
@@ -192,7 +233,9 @@ nav{
     h4 {
         font-size: 2.3rem;
     }
-
+    .about{
+        font-size: .9rem;
+    }
     .card-text {
         font-size: .8rem;
     }
@@ -200,7 +243,7 @@ nav{
 
 /* yoga */
 .yoga {
-    img {
+    .yoga-cover {
         width: 105%;
         margin-top: -65px;
     }
@@ -244,7 +287,7 @@ nav{
 
 /* oxyslovakia */
 .oxyslovakia {
-    img {
+    .oxy-cover {
         width: 115%;
         margin-top: -100px;
         padding-right: 40px;
@@ -255,16 +298,6 @@ nav{
             font-size: 3rem;
         }
 
-        button {
-            background-color: $light-brown;
-            color: $white;
-            padding: 10px 50px;
-
-            img {
-                width: 13px;
-                height: 10px;
-            }
-        }
 
         .light-text {
             font-size: 1rem;
@@ -281,7 +314,7 @@ nav{
 .barber {
 
     // background-color: $backgroundcolor;
-    img {
+    .barber-cover {
         width: 115%;
         margin-top: -100px;
     }
@@ -305,7 +338,7 @@ nav{
 
 /* manicure */
 .manicure {
-    img {
+    .manicure-cover {
         width: 115%;
         margin-top: -200px;
         padding-right: 40px;
@@ -316,16 +349,7 @@ nav{
             font-size: 3rem;
         }
 
-        button {
-            background-color: $light-brown;
-            color: $white;
-            padding: 10px 50px;
-
-            img {
-                width: 13px;
-                height: 10px;
-            }
-        }
+       
 
         .light-text {
             font-size: 1rem;
