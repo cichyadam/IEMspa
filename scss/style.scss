@@ -231,6 +231,10 @@ nav{
 
 /* figure */
 .form-figure {
+    background-image: url(../img/bg-figure.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -150px -50px;
     h4 {
         font-size: 2.3rem;
     }
@@ -268,7 +272,11 @@ nav{
 
 /* cryotherapy */
 .cryotherapy {
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
     .cryo-cover{
+        z-index: -100;
         width: 115%;
         margin-top: -200px;
         padding-right: 40px;
@@ -318,8 +326,10 @@ nav{
 
 /* barber */
 .barber {
-
-    // background-color: $backgroundcolor;
+    background-image: url(../img/bg.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    
     .barber-cover {
         width: 115%;
         margin-top: -100px;
@@ -344,10 +354,12 @@ nav{
 
 /* manicure */
 .manicure {
+    overflow: hidden;
     .manicure-cover {
         width: 115%;
         margin-top: -200px;
         padding-right: 40px;
+        filter: url(../img/filter.svg);
     }
 
     .mani-desc {
@@ -370,6 +382,10 @@ nav{
 }
 /* news */
 .news {
+    background-image: url(../img/bg-news.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: -160px -60px;
     h4 {
         font-size: 2.3rem;
     }

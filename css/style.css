@@ -167,14 +167,17 @@ nav {
   font-size: .8rem; }
 
 /* figure */
-.form-figure h4 {
-  font-size: 2.3rem; }
-
-.form-figure .about {
-  font-size: .9rem; }
-
-.form-figure .card-text {
-  font-size: .8rem; }
+.form-figure {
+  background-image: url(../img/bg-figure.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -150px -50px; }
+  .form-figure h4 {
+    font-size: 2.3rem; }
+  .form-figure .about {
+    font-size: .9rem; }
+  .form-figure .card-text {
+    font-size: .8rem; }
 
 /* yoga */
 .yoga .yoga-cover {
@@ -193,21 +196,23 @@ nav {
   column-gap: 40px; }
 
 /* cryotherapy */
-.cryotherapy .cryo-cover {
-  width: 115%;
-  margin-top: -200px;
-  padding-right: 40px; }
-
-.cryotherapy .cryo-desc h3 {
-  font-size: 3rem; }
-
-.cryotherapy .cryo-desc .light-text {
-  font-size: .9rem; }
-
-.cryotherapy .cryo-desc .desc {
-  font-size: .75rem;
-  column-count: 2;
-  column-gap: 40px; }
+.cryotherapy {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: auto; }
+  .cryotherapy .cryo-cover {
+    z-index: -100;
+    width: 115%;
+    margin-top: -200px;
+    padding-right: 40px; }
+  .cryotherapy .cryo-desc h3 {
+    font-size: 3rem; }
+  .cryotherapy .cryo-desc .light-text {
+    font-size: .9rem; }
+  .cryotherapy .cryo-desc .desc {
+    font-size: .75rem;
+    column-count: 2;
+    column-gap: 40px; }
 
 /* oxyslovakia */
 .oxyslovakia .oxy-cover {
@@ -225,41 +230,46 @@ nav {
   font-size: .7rem; }
 
 /* barber */
-.barber .barber-cover {
-  width: 115%;
-  margin-top: -100px; }
-
-.barber .barber-desc h3 {
-  font-size: 3rem; }
-
-.barber .barber-desc .light-text {
-  font-size: 1rem; }
-
-.barber .barber-desc .desc {
-  font-size: .8rem; }
+.barber {
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-size: auto; }
+  .barber .barber-cover {
+    width: 115%;
+    margin-top: -100px; }
+  .barber .barber-desc h3 {
+    font-size: 3rem; }
+  .barber .barber-desc .light-text {
+    font-size: 1rem; }
+  .barber .barber-desc .desc {
+    font-size: .8rem; }
 
 /* manicure */
-.manicure .manicure-cover {
-  width: 115%;
-  margin-top: -200px;
-  padding-right: 40px; }
-
-.manicure .mani-desc h3 {
-  font-size: 3rem; }
-
-.manicure .mani-desc .light-text {
-  font-size: 1rem; }
-
-.manicure .mani-desc .metric {
-  font-size: .75rem;
-  padding: 0 100px; }
+.manicure {
+  overflow: hidden; }
+  .manicure .manicure-cover {
+    width: 115%;
+    margin-top: -200px;
+    padding-right: 40px;
+    filter: url(../img/filter.svg); }
+  .manicure .mani-desc h3 {
+    font-size: 3rem; }
+  .manicure .mani-desc .light-text {
+    font-size: 1rem; }
+  .manicure .mani-desc .metric {
+    font-size: .75rem;
+    padding: 0 100px; }
 
 /* news */
-.news h4 {
-  font-size: 2.3rem; }
-
-.news .card-text {
-  font-size: .8rem; }
+.news {
+  background-image: url(../img/bg-news.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: -160px -60px; }
+  .news h4 {
+    font-size: 2.3rem; }
+  .news .card-text {
+    font-size: .8rem; }
 
 /* newsletter */
 .newsletter input {
