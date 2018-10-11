@@ -191,9 +191,7 @@ nav {
   font-size: 1.2rem; }
 
 .yoga .yoga-desc .desc {
-  column-count: 2;
-  font-size: 1rem;
-  column-gap: 40px; }
+  font-size: 1rem; }
 
 /* cryotherapy */
 .cryotherapy {
@@ -205,9 +203,7 @@ nav {
   .cryotherapy .cryo-desc .light-text {
     font-size: 1.2rem; }
   .cryotherapy .cryo-desc .desc {
-    font-size: 1rem;
-    column-count: 2;
-    column-gap: 40px; }
+    font-size: 1rem; }
 
 /* oxyslovakia */
 .oxyslovakia .oxy-desc h3 {
@@ -324,7 +320,15 @@ nav {
   .manicure-cover {
     width: 115%;
     margin-top: -200px;
-    padding-right: 40px; } }
+    padding-right: 40px; }
+  .cryotherapy .cryo-desc .desc {
+    font-size: 1rem;
+    column-count: 2;
+    column-gap: 40px; }
+  .yoga .yoga-desc .desc {
+    font-size: 1rem;
+    column-count: 2;
+    column-gap: 40px; } }
 
 @media (min-width: 1200px) {
   .yoga-cover {
@@ -345,4 +349,12 @@ nav {
   .manicure-cover {
     width: 115%;
     margin-top: -200px;
-    padding-right: 40px; } }
+    padding-right: 40px; }
+  .cryotherapy .cryo-desc .desc {
+    font-size: 1rem;
+    column-count: 2;
+    column-gap: 40px; }
+  .yoga .yoga-desc .desc {
+    font-size: 1rem;
+    column-count: 2;
+    column-gap: 40px; } }

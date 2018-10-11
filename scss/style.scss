@@ -58,10 +58,12 @@ $footer-icons: #d7bdb3;
 .metric {
     font-family: 'Metric';
 }
+
 .white-bg-nav {
     background-color: rgba(255, 255, 255, 0.93);
-    transition: background-color 1s ease 0s; }
-    
+    transition: background-color 1s ease 0s;
+}
+
 /* body */
 body {
     font-family: 'TiemposHeadline';
@@ -284,9 +286,9 @@ nav {
         }
 
         .desc {
-            column-count: 2;
+
             font-size: 1rem;
-            column-gap: 40px;
+
         }
     }
 }
@@ -308,8 +310,6 @@ nav {
 
         .desc {
             font-size: 1rem;
-            column-count: 2;
-            column-gap: 40px;
         }
 
     }
@@ -469,6 +469,7 @@ nav {
 
 
     }
+
 }
 
 
@@ -483,6 +484,7 @@ nav {
 
 
     }
+
 }
 
 
@@ -497,6 +499,7 @@ nav {
 
 
     }
+
 }
 
 
@@ -530,6 +533,30 @@ nav {
         margin-top: -200px;
         padding-right: 40px;
     }
+
+    .cryotherapy {
+
+        .cryo-desc {
+            .desc {
+                font-size: 1rem;
+                column-count: 2;
+                column-gap: 40px;
+            }
+
+        }
+    }
+
+    .yoga {
+
+        .yoga-desc {
+            .desc {
+                font-size: 1rem;
+                column-count: 2;
+                column-gap: 40px;
+            }
+
+        }
+    }
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -561,5 +588,30 @@ nav {
         width: 115%;
         margin-top: -200px;
         padding-right: 40px;
+    }
+
+
+    .cryotherapy {
+
+        .cryo-desc {
+            .desc {
+                font-size: 1rem;
+                column-count: 2;
+                column-gap: 40px;
+            }
+
+        }
+    }
+
+    .yoga {
+
+        .yoga-desc {
+            .desc {
+                font-size: 1rem;
+                column-count: 2;
+                column-gap: 40px;
+            }
+
+        }
     }
 }

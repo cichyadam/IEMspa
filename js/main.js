@@ -37,10 +37,5 @@ $(document).ready(function() {
           $('.navbar').removeClass('white-bg-nav');
           $('.navbar').addClass('bg-transparent');
       }
-      if ($(this).scrollTop() > 300) {
-        btn.addClass('show');
-      } else {
-        btn.removeClass('show');
-      }
     })
 });
