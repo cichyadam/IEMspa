@@ -133,7 +133,7 @@ nav {
     top: 0;
     left: 0;
     background-color: rgba(167, 154, 148, 0.98);
-    overflow-y: hidden;
+    overflow: hidden;
     transition: 0.5s; }
     nav .overlay a {
       padding: 8px;
@@ -146,7 +146,7 @@ nav {
         color: #B17D69; }
   nav .overlay-content {
     position: relative;
-    top: 10%;
+    top: 5%;
     width: 100%;
     text-align: center;
     margin-top: 30px; }
@@ -288,6 +288,21 @@ nav {
   transition: color .5s ease-out; }
   #footer .social-media-footer i:hover {
     color: #B17D69; }
+
+@media (max-width: 575.98px) {
+  .manicure .mani-desc .metric {
+    font-size: .75rem;
+    padding: 0 30px; } }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .manicure .mani-desc .metric {
+    font-size: .75rem;
+    padding: 0 30px; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .manicure .mani-desc .metric {
+    font-size: .75rem;
+    padding: 0 30px; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .yoga-cover {

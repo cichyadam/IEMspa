@@ -3,7 +3,8 @@ $light-brown: #A79A94;
 $black: #000;
 $white: #FFF;
 $light: #e3e1dc;
-$arial: Arial,sans-serif;
+$arial: Arial,
+sans-serif;
 $backgroundcolor: #e7e4e3;
 $footer: #b9aea9;
 $footer-icons: #d7bdb3;
@@ -18,17 +19,19 @@ $footer-icons: #d7bdb3;
     font-family: 'Metric';
     src: url(../font/Metric-Medium.otf);
 }
+
 @font-face {
     font-family: 'MetricLight';
     src: url(../font/Metric-Light.otf);
 }
+
 /* button */
 .yoga,
 .oxyslovakia,
 .cryotherapy,
 .barber,
 .manicure,
-.news{
+.news {
     button {
         font-family: 'MetricLight';
         letter-spacing: 4px;
@@ -36,7 +39,8 @@ $footer-icons: #d7bdb3;
         color: $white;
         padding: 5px 10px;
         border-radius: 0;
-        p{
+
+        p {
             margin: 0;
             font-size: .8rem;
         }
@@ -50,6 +54,7 @@ $footer-icons: #d7bdb3;
     }
 
 }
+
 .metric {
     font-family: 'Metric';
 }
@@ -123,52 +128,62 @@ body {
             font-size: 3rem;
         }
 
-            button {
-                font-family: 'MetricLight';
-                letter-spacing: 4px;
-                background-color: $light-brown;
-                color: $white;
-                padding: 5px 30px;
-                border-radius: 0;
-                p{
-                    margin: 0;
-                    font-size: .8rem;
-                }
+        button {
+            font-family: 'MetricLight';
+            letter-spacing: 4px;
+            background-color: $light-brown;
+            color: $white;
+            padding: 5px 30px;
+            border-radius: 0;
 
-                img {
-                    margin-left: 50px;
-                    width: 13px;
-                    height: 10px;
-                }
+            p {
+                margin: 0;
+                font-size: .8rem;
             }
+
+            img {
+                margin-left: 50px;
+                width: 13px;
+                height: 10px;
+            }
+        }
     }
 }
+
 /* navbar */
-nav{
+nav {
     height: 80px;
-    .logo{
-        img{
+
+    .logo {
+        img {
             width: 60%
         }
     }
+
     .burger-menu {
         z-index: 12;
-       .hamburger-inner{
-           background-color: $gold;
-           &::before,&::after{
+
+        .hamburger-inner {
             background-color: $gold;
-           }
-       }
-       .hamburger.is-active{
-        .hamburger-inner{
-            background-color: $gold;
-            &::before,&::after{
-             background-color: $gold;
+
+            &::before,
+            &::after {
+                background-color: $gold;
             }
         }
-       } 
+
+        .hamburger.is-active {
+            .hamburger-inner {
+                background-color: $gold;
+
+                &::before,
+                &::after {
+                    background-color: $gold;
+                }
+            }
+        }
     }
-    
+
     .overlay {
         height: 0%;
         width: 100%;
@@ -177,9 +192,9 @@ nav{
         top: 0;
         left: 0;
         background-color: rgba(167, 154, 148, 0.98);
-        overflow-y: hidden;
+        overflow: hidden;
         transition: 0.5s;
-    
+
         a {
             padding: 8px;
             text-decoration: none;
@@ -187,31 +202,33 @@ nav{
             color: $white;
             display: block;
             transition: color .5s ease-out;
-    
+
             &:hover,
             &:focus {
                 color: $gold;
             }
         }
-    
+
     }
-    
+
     .overlay-content {
         position: relative;
-    top: 10%;
-    width: 100%;
-    text-align: center;
-    margin-top: 30px;
-    .social-nav{
-        i{
-            color: $white;
-            transition: color .5s ease-out;
-            &:hover,
-            &:focus {
-                color: $gold;
+        top: 5%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+
+        .social-nav {
+            i {
+                color: $white;
+                transition: color .5s ease-out;
+
+                &:hover,
+                &:focus {
+                    color: $gold;
+                }
             }
         }
-    }
     }
 }
 
@@ -220,9 +237,10 @@ nav{
     h4 {
         font-size: 2.3rem;
     }
-        .about{
-            font-size: .9rem;
-        }
+
+    .about {
+        font-size: .9rem;
+    }
 
     .card-text {
         font-size: .8rem;
@@ -235,12 +253,15 @@ nav{
     background-repeat: no-repeat;
     background-size: auto;
     background-position: -150px -50px;
+
     h4 {
         font-size: 2.3rem;
     }
-    .about{
+
+    .about {
         font-size: .9rem;
     }
+
     .card-text {
         font-size: .8rem;
     }
@@ -248,7 +269,7 @@ nav{
 
 /* yoga */
 .yoga {
-    
+
 
     .yoga-desc {
         h3 {
@@ -317,7 +338,7 @@ nav{
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: auto;
-    
+
 
 
     .barber-desc {
@@ -347,7 +368,7 @@ nav{
             font-size: 3rem;
         }
 
-       
+
 
         .light-text {
             font-size: 1rem;
@@ -360,12 +381,14 @@ nav{
 
     }
 }
+
 /* news */
 .news {
     background-image: url(../img/bg-news.png);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: -160px -60px;
+
     h4 {
         font-size: 2.3rem;
     }
@@ -374,6 +397,7 @@ nav{
         font-size: .8rem;
     }
 }
+
 /* newsletter */
 .newsletter {
     input {
@@ -400,89 +424,142 @@ nav{
         word-break: break-word;
 
     }
-} 
-/* footer */
-#footer{
-.footer{
-    background-color: $light;
-    p{
-        font-size: .85rem;
-        line-height: 25px;
-    }
-    
 }
-.copyright{
-    color: $footer;
-    font-family: 'MetricLight';
-}
-.social-media-footer{   
-    i {
-        color: $footer-icons;
-        transition: color .5s ease-out;
 
-        &:hover {
-            color: $gold;
+/* footer */
+#footer {
+    .footer {
+        background-color: $light;
+
+        p {
+            font-size: .85rem;
+            line-height: 25px;
+        }
+
+    }
+
+    .copyright {
+        color: $footer;
+        font-family: 'MetricLight';
+    }
+
+    .social-media-footer {
+        i {
+            color: $footer-icons;
+            transition: color .5s ease-out;
+
+            &:hover {
+                color: $gold;
+            }
         }
     }
 }
-}
+
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {  }
+@media (max-width: 575.98px) {
+    .manicure {
+        .mani-desc {
+            .metric {
+                font-size: .75rem;
+                padding: 0 30px;
+            }
+        }
+
+
+    }
+}
+
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767.98px) {  }
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .manicure {
+        .mani-desc {
+            .metric {
+                font-size: .75rem;
+                padding: 0 30px;
+            }
+        }
+
+
+    }
+}
+
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) and (max-width: 991.98px) {  }
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .manicure {
+        .mani-desc {
+            .metric {
+                font-size: .75rem;
+                padding: 0 30px;
+            }
+        }
+
+
+    }
+}
+
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) and (max-width: 1199.98px) {    .yoga-cover {
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .yoga-cover {
         width: 105%;
         margin-top: -65px;
     }
-   .cryo-cover{
+
+    .cryo-cover {
         z-index: -100;
         width: 115%;
         margin-top: -200px;
         padding-right: 40px;
     }
-  .oxy-cover {
+
+    .oxy-cover {
         width: 115%;
         margin-top: -100px;
         padding-right: 40px;
     }
-  .barber-cover {
+
+    .barber-cover {
         width: 115%;
         margin-top: -100px;
     }
- .manicure-cover {
+
+    .manicure-cover {
         width: 115%;
         margin-top: -200px;
         padding-right: 40px;
-    } }
+    }
+}
 
 // Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {    .yoga-cover {
+@media (min-width: 1200px) {
+    .yoga-cover {
         width: 105%;
         margin-top: -65px;
     }
-   .cryo-cover{
+
+    .cryo-cover {
         z-index: -100;
         width: 115%;
         margin-top: -200px;
         padding-right: 40px;
     }
-  .oxy-cover {
+
+    .oxy-cover {
         width: 115%;
         margin-top: -100px;
         padding-right: 40px;
     }
-  .barber-cover {
+
+    .barber-cover {
         width: 115%;
         margin-top: -100px;
     }
- .manicure-cover {
+
+    .manicure-cover {
         width: 115%;
         margin-top: -200px;
         padding-right: 40px;
-    } }
+    }
+}
