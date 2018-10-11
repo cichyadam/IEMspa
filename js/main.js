@@ -26,3 +26,21 @@ function openNav() {
   function closeNav() {
     document.getElementById("mobile-navigation").style.height = "0%";
   }
+//after scrolling 200px, navbar will get a background
+$(document).ready(function() {
+
+    $(window).scroll(function() {
+      if($(this).scrollTop() > 200) { 
+          $('.navbar').addClass('white-bg-nav');
+          $('.navbar').removeClass('bg-transparent');
+      } else {
+          $('.navbar').removeClass('white-bg-nav');
+          $('.navbar').addClass('bg-transparent');
+      }
+      if ($(this).scrollTop() > 300) {
+        btn.addClass('show');
+      } else {
+        btn.removeClass('show');
+      }
+    })
+});

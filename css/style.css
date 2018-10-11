@@ -46,6 +46,10 @@
 .metric {
   font-family: 'Metric'; }
 
+.white-bg-nav {
+  background-color: rgba(255, 255, 255, 0.93);
+  transition: background-color 1s ease 0s; }
+
 /* body */
 body {
   font-family: 'TiemposHeadline';
