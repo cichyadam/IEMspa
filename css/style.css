@@ -134,7 +134,7 @@ nav {
     left: 0;
     background-color: rgba(167, 154, 148, 0.98);
     overflow: hidden;
-    transition: 0.5s; }
+    transition: 0.3s; }
     nav .overlay a {
       padding: 8px;
       text-decoration: none;
@@ -164,7 +164,7 @@ nav {
   font-size: .9rem; }
 
 .dermocosmetics .card-text {
-  font-size: .8rem; }
+  font-size: 1rem; }
 
 /* figure */
 .form-figure {
@@ -177,18 +177,18 @@ nav {
   .form-figure .about {
     font-size: .9rem; }
   .form-figure .card-text {
-    font-size: .8rem; }
+    font-size: 1rem; }
 
 /* yoga */
 .yoga .yoga-desc h3 {
   font-size: 3rem; }
 
 .yoga .yoga-desc .light-text {
-  font-size: .9rem; }
+  font-size: 1.2rem; }
 
 .yoga .yoga-desc .desc {
   column-count: 2;
-  font-size: .75rem;
+  font-size: 1rem;
   column-gap: 40px; }
 
 /* cryotherapy */
@@ -199,9 +199,9 @@ nav {
   .cryotherapy .cryo-desc h3 {
     font-size: 3rem; }
   .cryotherapy .cryo-desc .light-text {
-    font-size: .9rem; }
+    font-size: 1.2rem; }
   .cryotherapy .cryo-desc .desc {
-    font-size: .75rem;
+    font-size: 1rem;
     column-count: 2;
     column-gap: 40px; }
 
@@ -210,10 +210,10 @@ nav {
   font-size: 3rem; }
 
 .oxyslovakia .oxy-desc .light-text {
-  font-size: 1rem; }
+  font-size: 1.2rem; }
 
 .oxyslovakia .oxy-desc .metric {
-  font-size: .7rem; }
+  font-size: 1rem; }
 
 /* barber */
 .barber {
@@ -223,9 +223,9 @@ nav {
   .barber .barber-desc h3 {
     font-size: 3rem; }
   .barber .barber-desc .light-text {
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   .barber .barber-desc .desc {
-    font-size: .8rem; }
+    font-size: 1rem; }
 
 /* manicure */
 .manicure {
@@ -233,9 +233,9 @@ nav {
   .manicure .mani-desc h3 {
     font-size: 3rem; }
   .manicure .mani-desc .light-text {
-    font-size: 1rem; }
+    font-size: 1.2rem; }
   .manicure .mani-desc .metric {
-    font-size: .75rem;
+    font-size: 1rem;
     padding: 0 100px; }
 
 /* news */
@@ -247,7 +247,7 @@ nav {
   .news h4 {
     font-size: 2.3rem; }
   .news .card-text {
-    font-size: .8rem; }
+    font-size: 1rem; }
 
 /* newsletter */
 .newsletter input {
@@ -291,17 +291,14 @@ nav {
 
 @media (max-width: 575.98px) {
   .manicure .mani-desc .metric {
-    font-size: .75rem;
     padding: 0 30px; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
   .manicure .mani-desc .metric {
-    font-size: .75rem;
     padding: 0 30px; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .manicure .mani-desc .metric {
-    font-size: .75rem;
     padding: 0 30px; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
