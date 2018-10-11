@@ -104,7 +104,7 @@ body {
   border-radius: 0; }
   .hero-page .hero-heading button p {
     margin: 0;
-    font-size: .8rem; }
+    font-size: 1rem; }
   .hero-page .hero-heading button img {
     margin-left: 50px;
     width: 13px;
@@ -161,7 +161,7 @@ nav {
   font-size: 2.3rem; }
 
 .dermocosmetics .about {
-  font-size: .9rem; }
+  font-size: 1rem; }
 
 .dermocosmetics .card-text {
   font-size: 1rem; }
@@ -175,7 +175,7 @@ nav {
   .form-figure h4 {
     font-size: 2.3rem; }
   .form-figure .about {
-    font-size: .9rem; }
+    font-size: 1rem; }
   .form-figure .card-text {
     font-size: 1rem; }
 
