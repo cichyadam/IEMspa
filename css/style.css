@@ -173,7 +173,6 @@ nav {
 /* figure */
 .form-figure {
   background-image: url(../img/bg-figure.png);
-  background-repeat: no-repeat;
   background-size: auto;
   background-position: -150px -50px; }
   .form-figure h4 {
@@ -196,8 +195,8 @@ nav {
 /* cryotherapy */
 .cryotherapy {
   background-image: url(../img/bg.png);
-  background-repeat: no-repeat;
-  background-size: auto; }
+  background-size: auto;
+  overflow: hidden; }
   .cryotherapy .cryo-desc h3 {
     font-size: 3rem; }
   .cryotherapy .cryo-desc .light-text {
@@ -218,8 +217,8 @@ nav {
 /* barber */
 .barber {
   background-image: url(../img/bg.png);
-  background-repeat: no-repeat;
-  background-size: auto; }
+  background-size: auto;
+  overflow: hidden; }
   .barber .barber-desc h3 {
     font-size: 3rem; }
   .barber .barber-desc .light-text {
@@ -241,7 +240,6 @@ nav {
 /* news */
 .news {
   background-image: url(../img/bg-news.png);
-  background-repeat: no-repeat;
   background-size: auto;
   background-position: -160px -60px; }
   .news h4 {
@@ -302,13 +300,18 @@ nav {
     padding: 0 30px; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .form-figure,
+  .cryotherapy,
+  .barber,
+  .news {
+    background-repeat: no-repeat; }
   .yoga-cover {
     width: 105%;
     margin-top: -65px; }
   .cryo-cover {
     z-index: -100;
     width: 115%;
-    margin-top: -150px;
+    margin-top: -100px;
     padding-right: 40px; }
   .oxy-cover {
     width: 115%;
@@ -328,16 +331,23 @@ nav {
   .yoga .yoga-desc .desc {
     font-size: 1rem;
     column-count: 2;
-    column-gap: 40px; } }
+    column-gap: 40px; }
+  .form-figure {
+    margin: 0 1.5rem; } }
 
 @media (min-width: 1200px) {
+  .form-figure,
+  .cryotherapy,
+  .barber,
+  .news {
+    background-repeat: no-repeat; }
   .yoga-cover {
     width: 105%;
     margin-top: -65px; }
   .cryo-cover {
     z-index: -100;
     width: 115%;
-    margin-top: -150px;
+    margin-top: -100px;
     padding-right: 40px; }
   .oxy-cover {
     width: 115%;
@@ -357,4 +367,6 @@ nav {
   .yoga .yoga-desc .desc {
     font-size: 1rem;
     column-count: 2;
-    column-gap: 40px; } }
+    column-gap: 40px; }
+  .form-figure {
+    margin: 0 1.5rem; } }
