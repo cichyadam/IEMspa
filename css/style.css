@@ -194,8 +194,7 @@ nav {
 
 /* cryotherapy */
 .cryotherapy {
-  background-image: url(../img/bg.png);
-  background-size: auto;
+  background-color: #E8E6E4;
   overflow: hidden; }
   .cryotherapy .cryo-desc h3 {
     font-size: 3rem; }
@@ -216,8 +215,7 @@ nav {
 
 /* barber */
 .barber {
-  background-image: url(../img/bg.png);
-  background-size: auto;
+  background-color: #E8E6E4;
   overflow: hidden; }
   .barber .barber-desc h3 {
     font-size: 3rem; }
@@ -331,9 +329,7 @@ nav {
   .yoga .yoga-desc .desc {
     font-size: 1rem;
     column-count: 2;
-    column-gap: 40px; }
-  .form-figure {
-    margin: 0 1.5rem; } }
+    column-gap: 40px; } }
 
 @media (min-width: 1200px) {
   .form-figure,
@@ -367,6 +363,4 @@ nav {
   .yoga .yoga-desc .desc {
     font-size: 1rem;
     column-count: 2;
-    column-gap: 40px; }
-  .form-figure {
-    margin: 0 1.5rem; } }
+    column-gap: 40px; } }

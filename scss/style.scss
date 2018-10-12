@@ -5,9 +5,10 @@ $white: #FFF;
 $light: #e3e1dc;
 $arial: Arial,
 sans-serif;
-$backgroundcolor: #e7e4e3;
+$backgroundcolor: #e7e4e3; 	
 $footer: #b9aea9;
 $footer-icons: #d7bdb3;
+$bg: 	#E8E6E4;
 
 /* font */
 @font-face {
@@ -294,8 +295,7 @@ nav {
 
 /* cryotherapy */
 .cryotherapy {
-    background-image: url(../img/bg.png);
-    background-size: auto;
+   background-color: $bg;
     overflow: hidden;
 
     .cryo-desc {
@@ -337,8 +337,7 @@ nav {
 
 /* barber */
 .barber {
-    background-image: url(../img/bg.png);
-    background-size: auto;
+  background-color: $bg;
     overflow: hidden;
 
 
@@ -561,9 +560,7 @@ nav {
 
         }
     }
-    .form-figure{
-        margin: 0 1.5rem;
-    }
+   
 }
 
 // Extra large devices (large desktops, 1200px and up)
@@ -627,7 +624,5 @@ nav {
 
         }
     }
-    .form-figure{
-        margin: 0 1.5rem;
-    }
+    
 }
