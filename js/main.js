@@ -39,3 +39,18 @@ $(document).ready(function() {
       }
     })
 });
+//scrollmagic
+$(document).ready(function() {
+    let a = new ScrollMagic.Controller
+      , b = new ScrollMagic.Scene({
+        triggerElement: ".hero-page",
+        triggerHook: 0
+    }).setPin().addTo(a);
+    $(".animate-section").each(function() {
+        new ScrollMagic.Scene({
+            triggerElement: this.children[0],
+            triggerHook: 0.9,
+            reverse: !1
+        }).setClassToggle(this, "animation").addTo(a)
+    })
+});

@@ -50,6 +50,16 @@
   background-color: rgba(255, 255, 255, 0.93);
   transition: background-color 1s ease 0s; }
 
+/* scroll magic classes */
+.animate-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all .9s ease-out; }
+
+.animation {
+  opacity: 1;
+  transform: translateY(0); }
+
 /* body */
 body {
   font-family: 'TiemposHeadline';
@@ -246,27 +256,79 @@ nav {
     font-size: 1rem; }
 
 /* newsletter */
-.newsletter input {
+.newsletter .input-group input {
   background-color: #e3e1dc;
   box-shadow: none;
   font-size: 1rem;
   line-height: 1.43;
-  min-height: 3.5em;
-  padding: 1em .5em; }
+  min-height: 3em;
+  padding: 1em .5em;
+  border: 1px solid transparent;
+  border-radius: 0; }
 
 .newsletter button {
   background-color: #A79A94;
   color: #FFF;
+  font-family: 'MetricLight';
   border-radius: 0;
   letter-spacing: 1px;
-  margin: .4rem .8rem;
   transition: all 0.3s ease-in-out;
-  padding: .7rem 3rem;
-  border-radius: 3px;
+  padding: .65rem 3rem;
+  border: 1px solid transparent;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   word-break: break-word; }
+
+.newsletter .checkbox label:after,
+.newsletter .radio label:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+.newsletter .checkbox .cr,
+.newsletter .radio .cr {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #a9a9a9;
+  border-radius: .25em;
+  width: 1.3em;
+  height: 1.3em;
+  float: left;
+  margin-right: .5em; }
+
+.newsletter .radio .cr {
+  border-radius: 50%; }
+
+.newsletter .checkbox .cr .cr-icon,
+.newsletter .radio .cr .cr-icon {
+  position: absolute;
+  font-size: .8em;
+  line-height: 0;
+  top: 50%;
+  left: 20%; }
+
+.newsletter .radio .cr .cr-icon {
+  margin-left: 0.04em; }
+
+.newsletter .checkbox label input[type="checkbox"],
+.newsletter .radio label input[type="radio"] {
+  display: none; }
+
+.newsletter .checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.newsletter .radio label input[type="radio"] + .cr > .cr-icon {
+  transform: scale(3) rotateZ(-20deg);
+  opacity: 0;
+  transition: all .3s ease-in; }
+
+.newsletter .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.newsletter .radio label input[type="radio"]:checked + .cr > .cr-icon {
+  transform: scale(1) rotateZ(0deg);
+  opacity: 1; }
+
+.newsletter .checkbox label input[type="checkbox"]:disabled + .cr,
+.newsletter .radio label input[type="radio"]:disabled + .cr {
+  opacity: .5; }
 
 /* footer */
 #footer .footer {
