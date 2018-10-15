@@ -437,6 +437,10 @@ nav {
         word-break: break-word;
 
     }
+    .checkbox{
+        font-family: 'MetricLight';
+        color: $footer;
+    }
     .checkbox label:after, 
 .radio label:after {
     content: '';
@@ -448,10 +452,9 @@ nav {
 .radio .cr {
     position: relative;
     display: inline-block;
-    border: 1px solid #a9a9a9;
-    border-radius: .25em;
-    width: 1.3em;
-    height: 1.3em;
+    background-color: $light-brown;
+    width: 1em;
+    height: 1em;
     float: left;
     margin-right: .5em;
 }

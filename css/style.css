@@ -280,6 +280,10 @@ nav {
   justify-content: center;
   word-break: break-word; }
 
+.newsletter .checkbox {
+  font-family: 'MetricLight';
+  color: #b9aea9; }
+
 .newsletter .checkbox label:after,
 .newsletter .radio label:after {
   content: '';
@@ -290,10 +294,9 @@ nav {
 .newsletter .radio .cr {
   position: relative;
   display: inline-block;
-  border: 1px solid #a9a9a9;
-  border-radius: .25em;
-  width: 1.3em;
-  height: 1.3em;
+  background-color: #A79A94;
+  width: 1em;
+  height: 1em;
   float: left;
   margin-right: .5em; }
 
