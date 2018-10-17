@@ -177,6 +177,45 @@ nav {
 .dermocosmetics .about {
   font-size: 1rem; }
 
+.dermocosmetics .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  margin: 0 auto; }
+
+.dermocosmetics .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #B17D69; }
+  .dermocosmetics .overlay .text {
+    font-family: 'TiemposHeadline';
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+    .dermocosmetics .overlay .text p {
+      font-family: 'MetricLight'; }
+      .dermocosmetics .overlay .text p img {
+        z-index: 1000;
+        margin-left: 20px;
+        width: 13px;
+        height: 10px; }
+
+.dermocosmetics .card:hover .overlay {
+  opacity: 1; }
+
 .dermocosmetics .card-text {
   font-size: 1rem; }
 
@@ -189,6 +228,10 @@ nav {
     font-size: 2.3rem; }
   .form-figure .about {
     font-size: 1rem; }
+  .form-figure .card {
+    transition: .5s ease; }
+    .form-figure .card:hover {
+      transform: scale(1.1); }
   .form-figure .card-text {
     font-size: 1rem; }
 
@@ -283,54 +326,40 @@ nav {
 .newsletter .checkbox {
   font-family: 'MetricLight';
   color: #b9aea9; }
+  .newsletter .checkbox span i {
+    color: #B17D69; }
+  .newsletter .checkbox label::after {
+    content: '';
+    display: table;
+    clear: both; }
+  .newsletter .checkbox .cr {
+    position: relative;
+    display: inline-block;
+    background-color: #A79A94;
+    width: 1em;
+    height: 1em;
+    float: left;
+    margin-right: .5em; }
+    .newsletter .checkbox .cr .cr-icon {
+      position: absolute;
+      font-size: .8em;
+      line-height: 0;
+      top: 50%;
+      left: 20%; }
 
-.newsletter .checkbox label:after,
-.newsletter .radio label:after {
-  content: '';
-  display: table;
-  clear: both; }
-
-.newsletter .checkbox .cr,
-.newsletter .radio .cr {
-  position: relative;
-  display: inline-block;
-  background-color: #A79A94;
-  width: 1em;
-  height: 1em;
-  float: left;
-  margin-right: .5em; }
-
-.newsletter .radio .cr {
-  border-radius: 50%; }
-
-.newsletter .checkbox .cr .cr-icon,
-.newsletter .radio .cr .cr-icon {
-  position: absolute;
-  font-size: .8em;
-  line-height: 0;
-  top: 50%;
-  left: 20%; }
-
-.newsletter .radio .cr .cr-icon {
-  margin-left: 0.04em; }
-
-.newsletter .checkbox label input[type="checkbox"],
-.newsletter .radio label input[type="radio"] {
+.newsletter .checkbox label input[type="checkbox"] {
   display: none; }
 
-.newsletter .checkbox label input[type="checkbox"] + .cr > .cr-icon,
-.newsletter .radio label input[type="radio"] + .cr > .cr-icon {
+.newsletter .checkbox label input[type="checkbox"] + .cr > .cr-icon {
   transform: scale(3) rotateZ(-20deg);
   opacity: 0;
   transition: all .3s ease-in; }
 
-.newsletter .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
-.newsletter .radio label input[type="radio"]:checked + .cr > .cr-icon {
+.newsletter .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon {
   transform: scale(1) rotateZ(0deg);
   opacity: 1; }
 
-.newsletter .checkbox label input[type="checkbox"]:disabled + .cr,
-.newsletter .radio label input[type="radio"]:disabled + .cr {
+.newsletter .checkbox label input[type="checkbox"]:disabled + .cr {
   opacity: .5; }
 
 /* footer */
