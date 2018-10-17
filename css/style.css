@@ -205,13 +205,16 @@ nav {
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%); }
-    .dermocosmetics .overlay .text p {
-      font-family: 'MetricLight'; }
-      .dermocosmetics .overlay .text p img {
-        z-index: 1000;
-        margin-left: 20px;
-        width: 13px;
-        height: 10px; }
+    .dermocosmetics .overlay .text a {
+      text-decoration: none;
+      color: #FFF; }
+      .dermocosmetics .overlay .text a p {
+        font-family: 'MetricLight'; }
+        .dermocosmetics .overlay .text a p img {
+          z-index: 1000;
+          margin-left: 20px;
+          width: 13px;
+          height: 10px; }
 
 .dermocosmetics .card:hover .overlay {
   opacity: 1; }

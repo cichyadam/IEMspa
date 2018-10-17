@@ -284,15 +284,20 @@ nav {
             left: 50%;
             transform: translate(-50%, -50%);
             -ms-transform: translate(-50%, -50%);
-            p{
-                font-family: 'MetricLight';
-                img {
-                    z-index: 1000;
-                    margin-left: 20px;
-                    width: 13px;
-                    height: 10px;
+            a{
+                text-decoration: none;
+                color: $white;
+                p{
+                    font-family: 'MetricLight';
+                    img {
+                        z-index: 1000;
+                        margin-left: 20px;
+                        width: 13px;
+                        height: 10px;
+                    }
                 }
             }
+           
         }
     }
     
