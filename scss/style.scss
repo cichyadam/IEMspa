@@ -100,7 +100,7 @@ body {
     }
 
 }
-
+  
 /* hero page */
 .hero-page {
     .side-bar {
@@ -163,6 +163,8 @@ body {
             }
         }
     }
+  
+   
 }
 
 /* navbar */
@@ -328,6 +330,9 @@ nav {
     }
     .card{
         transition: .5s ease;
+        .card-text{
+           width: 100%; 
+        }
         &:hover{
             transform: scale(1.1);
         }
@@ -576,6 +581,20 @@ nav {
 
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+    .hero-page{
+        .container-fluid{
+            .row{
+                .col-md-2{
+                    display: none;
+                }
+                .col-5{
+                    &:last-child{
+                    display: none;
+                }
+            }
+            }
+        }
+    }
     .manicure {
         .mani-desc {
             .metric {
@@ -591,6 +610,21 @@ nav {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767.98px) {
+    .hero-page{
+        .container-fluid{
+            .row{
+                .col-md-2{
+                    display: none;
+                }
+                .col-5{
+                    &:last-child{
+                    display: none;
+                }
+            }
+            }
+        }
+    }
+    
     .manicure {
         .mani-desc {
             .metric {
@@ -606,6 +640,20 @@ nav {
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) and (max-width: 991.98px) {
+        .hero-page{
+        .container-fluid{
+            .row{
+                .col-md-2{
+                    display: none;
+                }
+                .col-5{
+                    &:last-child{
+                    display: none;
+                }
+            }
+            }
+        }
+    }
     .manicure {
         .mani-desc {
             .metric {
@@ -621,6 +669,17 @@ nav {
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
+    .hero-page{
+        .carousel{
+            margin-top: -150px;
+            .carousel-item{
+                img{
+                    background-position: center;
+                    height: 100vh;
+                }
+            }
+        }
+    }
         .form-figure,
         .cryotherapy,
         .barber,
@@ -684,6 +743,17 @@ nav {
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+    .hero-page{
+        .carousel{
+            margin-top: -150px;
+            .carousel-item{
+                img{
+                    background-position: center;
+                    height: 100vh;
+                }
+            }
+        }
+    }
     .form-figure,
     .cryotherapy,
     .barber,

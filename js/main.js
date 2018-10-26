@@ -6,6 +6,7 @@ let hamburger = document.querySelector(".hamburger");
     } else {
         closeNav();
     }
+    
     hamburger.classList.toggle("is-active");
    
   });
@@ -37,6 +38,8 @@ $(document).ready(function() {
           $('.navbar').removeClass('white-bg-nav');
           $('.navbar').addClass('bg-transparent');
       }
+      
+     
     })
 });
 //scrollmagic

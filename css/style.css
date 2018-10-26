@@ -233,6 +233,8 @@ nav {
     font-size: 1rem; }
   .form-figure .card {
     transition: .5s ease; }
+    .form-figure .card .card-text {
+      width: 100%; }
     .form-figure .card:hover {
       transform: scale(1.1); }
   .form-figure .card-text {
@@ -383,18 +385,35 @@ nav {
     color: #B17D69; }
 
 @media (max-width: 575.98px) {
+  .hero-page .container-fluid .row .col-md-2 {
+    display: none; }
+  .hero-page .container-fluid .row .col-5:last-child {
+    display: none; }
   .manicure .mani-desc .metric {
     padding: 0 30px; } }
 
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .hero-page .container-fluid .row .col-md-2 {
+    display: none; }
+  .hero-page .container-fluid .row .col-5:last-child {
+    display: none; }
   .manicure .mani-desc .metric {
     padding: 0 30px; } }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .hero-page .container-fluid .row .col-md-2 {
+    display: none; }
+  .hero-page .container-fluid .row .col-5:last-child {
+    display: none; }
   .manicure .mani-desc .metric {
     padding: 0 30px; } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
+  .hero-page .carousel {
+    margin-top: -150px; }
+    .hero-page .carousel .carousel-item img {
+      background-position: center;
+      height: 100vh; }
   .form-figure,
   .cryotherapy,
   .barber,
@@ -429,6 +448,11 @@ nav {
     column-gap: 40px; } }
 
 @media (min-width: 1200px) {
+  .hero-page .carousel {
+    margin-top: -150px; }
+    .hero-page .carousel .carousel-item img {
+      background-position: center;
+      height: 100vh; }
   .form-figure,
   .cryotherapy,
   .barber,
